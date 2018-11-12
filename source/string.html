@@ -1,0 +1,51 @@
+<html>
+<head>
+    <script>
+        // string
+        var text = "test";
+        alert(text);
+
+        // unicode
+        var name = "\u4e2d\u6587";
+        alert(name);
+
+        // multi line
+        var multi_line_string = `
+        first line
+        2nd line
+        3rd line`;
+        alert(multi_line_string);
+
+        // string stream
+        var name = "小明";
+        var age = 20;
+        var message = "你好， " + name + ", 你今年" + age + "岁!";
+        alert(message);
+        alert("你好， " + name + ", 你今年" + age + "岁!");
+
+        //string stream in ES6
+        var message2 = `你好， ${name}, 你今年 ${age}, 岁了`;
+        alert("ES6 version：" + message2);
+
+        // useful functions
+        // length
+        var s = "hello world";
+        alert("s length is " + s.length);
+        // toUpperCase
+        var s = "hello";
+        alert(s.toUpperCase());
+        var S = "HELLO WORLD";
+        alert(S.toLowerCase());
+        // indexOf
+        var x = "hello keyu";
+        alert(x.indexOf("keyu"));
+        alert(x.substring(0,5));
+        // substring
+        alert(x.substring(0,3));
+
+    </script>
+</head>
+<body>
+...
+</body>
+</html>
