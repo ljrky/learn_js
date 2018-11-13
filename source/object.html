@@ -10,11 +10,28 @@
             hasCar: true,
             zipcode: null
         }
+        //访问属性
         alert(person.name);
         alert(person.zipcode);
-        alert(person);
         alert(person.type);
-        console.log(person.name)
+        person.label = "smart";
+        alert(person.label);
+        alert("is label in person's properties : " + person.hasOwnProperty("label"));
+        delete person.hasCar;
+        alert("is hasCar in person's properties : " + person.hasOwnProperty("hasCar"));
+
+
+        //object
+        var address ={
+            door : "410",
+            building : "A",
+            street : "jinke",
+            no : 99,
+        }
+        alert(address.door);
+        alert(address.building);
+        alert(address.street);
+        console.log(address.no);
     </script>
 </head>
 <body>
