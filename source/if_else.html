@@ -1,0 +1,45 @@
+<html>
+<head>
+    <script>
+        var age = 20;
+
+        //typical if else
+        if (age >= 18){
+            alert("adult");
+        }else {
+            alert("teenager");
+        }
+
+        //more complicate if else
+        var age = 3;
+        if (age >= 18){
+            alert("adult");
+        }else if (age >= 6){
+            alert("teenager");
+        }else {
+            alert("kid");
+        }
+
+
+        var height = parseFloat(prompt("请输入身高(m):"));
+        var weight = parseFloat(prompt("请输入体重(kg):"));
+
+        var bmi = weight / height * height;
+        if (bmi > 32){
+            alert("严重肥胖");
+        }else if (bim >= 28){
+            alert("肥胖");
+        }else if (bim >= 25){
+            alert("过重");
+        }else if(bim >= 18.5){
+            alert("正常");
+        }else {
+            alert("过轻");
+        }
+
+    </script>
+</head>
+<body>
+...
+</body>
+</html>
