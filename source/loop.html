@@ -1,0 +1,62 @@
+<html>
+<head>
+    <script>
+        var x = 0;
+        for (j = 0; j < 10000; j++) {
+            x = x + 1;
+        }
+        alert(x);
+
+        var y = 1;
+        for (let i = 2; i <= 10; i++) {
+            y = y * i;
+        }
+        alert(y);
+
+        //loop array
+        var arr = ['microsoft', 'google', 'apple'];
+        for (let j = 0; j < arr.length; j++) {
+            alert(arr[j]);
+        }
+
+        //for in
+        var o = {
+            name:"jack",
+            age:20,
+            city:"Beijing"
+        };
+        for (var key in o){
+            alert(key);
+        }
+        for (var key in o){
+            if(o.hasOwnProperty(key)){
+                alert(key);
+            }
+        }
+
+        //while
+        var x = 0;
+        var n = 99;
+        while(n > 0){
+            x = x + n;
+            n = n -2;
+        }
+        alert(x);
+
+        var arr = ['Bart', 'Lisa', 'Adam'];
+        for (let i = 0; i < arr.length; i++) {
+            alert(arr[i]);
+        }
+
+        var arr_length = arr.length - 1;
+        while (arr_length >=0){
+            alert(arr[arr_length]);
+            arr_length = arr_length - 1;
+        }
+
+    </script>
+</head>
+<body>
+...
+</body>
+</html>
