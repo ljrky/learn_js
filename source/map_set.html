@@ -1,0 +1,43 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script>
+        //Map
+        //初始化方法一：
+        var m = new Map();
+        // add
+        m.set("Adam", 67);
+        // query
+        alert("has adam : " + m.has("Adam"));
+        alert("get adam : " + m.get("Adam"));
+        // update
+        m.set("Adam", 100);
+        alert("get adam : " + m.get("Adam"));
+        // delete
+        alert("del adam : " + m.delete("Adam"));
+        alert("get adam : " + m.get("Adam"));
+
+        //初始化方法二：
+        var m = new Map([["Adam", 95],["bob", 75], ["tracy", 85]]);
+        alert("Adam is " + m.get("Adam") + " old.");
+
+        //Set
+        //初始化方法一：
+        var s1 = new Set();
+        // add
+        s1.add(4);
+        // delete
+        s1.add(3);
+        alert(s1.size);
+        s1.delete(4);
+        alert(s1.size);
+
+        //初始化方法二：
+        var s = new Set([1,2,3,4]);
+        alert(s.size);
+    </script>
+</head>
+<body>
+...
+</body>
+</html>
