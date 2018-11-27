@@ -32,6 +32,33 @@
         alert(address.building);
         alert(address.street);
         console.log(address.no);
+
+        //method
+        var xiaoming = {
+            name: "xiaoming",
+            birth: 1990,
+            age:function () {
+                var y = new Date().getFullYear();
+                //use keyword this to refer to this instance
+                return y - this.birth;
+            }
+        }
+
+        console.log(xiaoming.age());
+
+        //apply keyword
+        function getAge1() {
+            var y = new Date().getFullYear();
+            return y - this.birth;
+        }
+
+        var xiaoming1 = {
+            name: "xiaoming",
+            birth: 1990,
+        };
+        //the name of function, argument is object and the argument for function
+        getAge1.apply(xiaoming1);
+
     </script>
 </head>
 <body>
