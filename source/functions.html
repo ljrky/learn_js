@@ -1,0 +1,51 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script>
+        // define a function
+        function abs(x) {
+            if(x >= 0){
+                return x;
+            }else {
+                return -x;
+            }
+        }
+        var x = 10;
+        var y = -11;
+        console.log(abs(x));
+        console.log(abs(y));
+
+        //define a var refer to function
+        var fun_abs= function (x) {
+            if(x >= 0){
+                return x;
+            }else {
+                return -x;
+            }
+        }
+        console.log(fun_abs(y));
+
+        // argument keyword, to get all argument
+        function arugment(a,b,c) {
+            console.log(arguments.length);
+            for (var x of arguments){
+                console.log(x);
+            }
+        }
+        arugment(1,2,3,4);
+
+        // rest keyword, to get rest of arguments, it only get argument other than a and b
+        function rest_function(a,b, ...rest) {
+            console.log(rest.length);
+            for (var x of rest){
+                console.log(x);
+            }
+        }
+        rest_function(1,2,3,4,5,6);
+
+    </script>
+</head>
+<body>
+...
+</body>
+</html>
