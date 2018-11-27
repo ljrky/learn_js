@@ -1,36 +1,38 @@
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <script>
+        // standard for loop
         var x = 0;
         for (j = 0; j < 10000; j++) {
             x = x + 1;
         }
-        alert(x);
+        console.log(x);
 
         var y = 1;
         for (let i = 2; i <= 10; i++) {
             y = y * i;
         }
-        alert(y);
+        console.log(y);
 
         //loop array
         var arr = ['microsoft', 'google', 'apple'];
         for (let j = 0; j < arr.length; j++) {
-            alert(arr[j]);
+            console.log(arr[j]);
         }
 
-        //for in
+        //for in,but do not use it as it will iterate all properties, not only items
         var o = {
             name:"jack",
             age:20,
             city:"Beijing"
         };
         for (var key in o){
-            alert(key);
+            console.log(key);
         }
         for (var key in o){
             if(o.hasOwnProperty(key)){
-                alert(key);
+                console.log(key);
             }
         }
 
@@ -41,18 +43,31 @@
             x = x + n;
             n = n -2;
         }
-        alert(x);
-
-        var arr = ['Bart', 'Lisa', 'Adam'];
-        for (let i = 0; i < arr.length; i++) {
-            alert(arr[i]);
-        }
+        console.log(x);
 
         var arr_length = arr.length - 1;
         while (arr_length >=0){
-            alert(arr[arr_length]);
+            console.log(arr[arr_length]);
             arr_length = arr_length - 1;
         }
+
+        //for in loop and for of loop
+        //for of loop over for in loop
+        var a = ["A","B","C"];
+        for (var x of a){
+            console.log(x);
+        }
+        //for in loop
+        var b = ["1","2","3"];
+        for (var v in b){
+            console.log(b[v]);
+        }
+
+        //But the best solution is foreach function
+        var a = ['A', 'B', 'C', "D"];
+        a.forEach(function (element, index, array) {
+            console.log(element + " is at " + index);
+        })
 
     </script>
 </head>
